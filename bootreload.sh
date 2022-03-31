@@ -27,8 +27,7 @@ read -p "Particoes montadas..."
 
 #reinstalar o bootloader
 
-arch-chroot /mnt
-grub-install --target=x86_64-efi --efi-directory=/boot --recheck /dev/sda
+arch-chroot /mnt grub-install --target=x86_64-efi --efi-directory=/boot --recheck /dev/sda
 
 read -p "Grub reinstalado..."
 
